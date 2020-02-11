@@ -1,0 +1,24 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>score</title>
+</head>
+<body>
+  <h1>RESULT</h1>
+
+  <% if @word_hash['found'] == false %>
+    <p>
+      Sorry but <strong><%=@word%></strong> does not seem to be a valid English word...
+    </p>
+  <% else %>
+    <p>
+      <strong>Congratulations!</strong><%=@word%> is a valid English word!
+    </p>
+  <% end %>
+
+  <p><%= @word %>word</p>
+
+  <p><%= @letter %>letter</p>
+
+</body>
+</html>
